@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Plataforma de Streaming</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(90deg, #000, #333);
+            color: #ffcc00;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 200px 20px 50px;
+            background-image: url('fundo.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: #fff;
+        }
+        .hero h2 {
+            font-size: 48px;
+            margin: 0 0 20px;
+            text-shadow: 2px 2px 4px #000;
+            background: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin: 0 0 30px;
+            text-shadow: 1px 1px 3px #000;
+            background: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .hero button {
+            padding: 12px 24px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #ffcc00;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .hero button:hover {
+            background-color: #e6b800;
+            transform: translateY(-2px);
+        }
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #111;
+            padding: 30px;
+            margin-top: 20px;
+        }
+        .video-container video {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ffcc00;
+            border-radius: 5px;
+        }
+        .video-container p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #ccc;
+        }
+        .sections {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h3 {
+            font-size: 24px;
+            color: #ffcc00;
+        }
+        .section p {
+            font-size: 16px;
+        }
+        .section img {
+            display: block;
+            margin: 20px auto 0;
+            max-width: 80%;
+            height: auto;
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        .horizontal-categories {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .horizontal-categories .section {
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+            max-width: 300px;
+        }
+        .horizontal-categories .section a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #111;
+            color: #888;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            position: relative;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer .social-icons {
+            margin-top: 10px;
+        }
+        footer .social-icons a {
+            margin: 0 10px;
+            color: #ffcc00;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cine TV</h1>
+        <nav>
+            <a href="#esportes">Esportes</a>
+            <a href="#series-filmes">Séries e Filmes</a>
+            <a href="#teste-gratuito">Teste Gratuito</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Todo o Entretenimento em um só lugar</h2>
+        <p>Assista aos melhores campeonatos esportivos, séries e filmes do mundo.</p>
+        <button onclick="window.location.href='#teste-gratuito'">Experimente Grátis</button>
+    </section>
+
+    <div class="video-container">
+        <iframe src="https://drive.google.com/file/d/12sO1rW5fXZuDf152hIQVmtL5T006Et8i/preview" width="640" height="480" allow="autoplay"></iframe>
+        <p>Veja como nossa plataforma funciona e explore nossos recursos exclusivos.</p>
+    </div>
+
+    <!-- Imagem "Come" adicionada após o vídeo -->
+    <div>
+        <img src="Come.jpg" alt="Imagem Come" style="display: block; margin: 20px auto; max-width: 80%; height: auto; border: 2px solid #ffcc00; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);">
+    </div>
+
+    <div class="sections horizontal-categories">
+        <section id="esportes" class="section">
+            <a href="#esportes">
+                <h3>Todos os Canais de TV a Cabo</h3>
+                <p>Assista a todos os seus canais de TV favoritos ao vivo e em alta qualidade.</p>
+                <img src="Canais.jpg" alt="Canais de TV">
+            </a>
+        </section>
+        
+        <section id="series-filmes" class="section">
+            <a href="#series-filmes">
+                <h3>Séries e Filmes</h3>
+                <p>Tenha acesso ao melhor catálogo de filmes e séries de outras plataformas em um único lugar.</p>
+                <img src="Filmes.jpg" alt="Séries e Filmes">
+            </a>
+        </section>
+
+        <section id="canais-infantis" class="section">
+            <a href="#canais-infantis">
+                <h3>Canais Infantis</h3>
+                <p>Entretenimento seguro e divertido para as crianças, com os melhores canais dedicados aos pequenos.</p>
+                <img src="Kids.jpg" alt="Canais Infantis">
+            </a>
+        </section>
+        
+        <section id="teste-gratuito" class="section">
+            <h3>Teste Gratuito</h3>
+            <p>Cadastre-se agora e tenha 7 dias de acesso gratuito para experimentar tudo que oferecemos.</p>
+            <button onclick="window.location.href='cadastro.html'">Cadastre-se</button>
+        </section>
+    </div>
+
+    <div>
+        <img src="Quiser.jpg" alt="Imagem Quiser" style="display: block; margin: 20px auto; max-width: 80%; height: auto; border: 2px solid #ffcc00; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);">
+    </div>
+
+    <div class="section" style="text-align: center; padding: 20px; background-color: #111; margin-top: 20px;">
+        <h3>Teste de 6 Horas</h3>
+        <p>Experimente nossa plataforma por 6 horas e conheça todos os nossos serviços. Para solicitar o teste, entre em contato pelo nosso WhatsApp.</p>
+        <button onclick="window.location.href='https://wa.me/5551999999999'" style="padding: 12px 24px; font-size: 16px; background-color: #25D366; color: #fff; border: none; border-radius: 5px; cursor: pointer; transition: all 0.3s ease;">Solicitar Teste</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Cine TV. Todos os direitos reservados.</p>
+        <div class="social-icons">
+            <a href="#" title="Facebook">F</a>
+            <a href="#" title="Instagram">I</a>
+            <a href="#" title="Twitter">T</a>
+        </div>
+    </footer>
+</body>
+</html>
